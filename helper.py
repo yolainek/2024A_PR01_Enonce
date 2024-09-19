@@ -30,9 +30,13 @@ def create_board():
 
 def create_coins(board):
     coins = []
+     # Placeholde)r, ligne à retirer
+for x in range(1,16):
+    for y in range(1,16):
+        if (x,y)==0:
+            coins.append(0,0)
 
-    coins.append((1, 1)) # Placeholder, ligne à retirer
-
+     
     # TODO: Ajouter la position de toutes les cases '0' à la variable coins. Pour ajouter un élément, vous pouvez utiliser l'expression suivante :
     # coins.append((x, y))
     # en remplacant x et y par la position. Notez que le premier coin est à la position (0, 0)
@@ -45,7 +49,11 @@ def create_coins(board):
 
 def create_special_coins(board):
     special_coins = []
+for special_coins in special_coins_pos :
+        special_coins.remove(special_coins_pos)
+
 
     # TODO: Ajouter des coins aux positions spéciales, en utilisant la variable 'special_coins_pos'.
     
     return special_coins
+l_coins in special_coins_pos:
